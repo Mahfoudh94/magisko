@@ -1,0 +1,30 @@
+html {
+  scroll-behavior: smooth;
+}
+body{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(45deg,#d2001a,#7462ff,#f48e21,#23d5ab);
+  background-size: 300% 300%;
+  animation: gradient 12s ease infinite;
+}
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+.navbar-brand {
+  font-size: 1.5em;
+  color: orange !important;
+}
+form{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25vh;
+}
