@@ -3,13 +3,15 @@ html {
 }
 body{
   width: 100%;
+  padding-top: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
   background: linear-gradient(45deg,#d2001a,#7462ff,#f48e21,#23d5ab);
+  background-attachment: fixed;
   background-size: 300% 300%;
-  animation: gradient 12s ease infinite;
+  animation: 12s ease infinite gradient;
 }
 *{
   margin: 0;
@@ -27,4 +29,22 @@ form{
   align-items: center;
   justify-content: center;
   height: 25vh;
+}
+div#login{
+  z-index: 5;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+}
+div#login::before{
+  content: "";
+  width: 1000vw;
+  height: 1000vh;
+  background-color: black;
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  z-index: -1;
+  opacity: 50%;
 }

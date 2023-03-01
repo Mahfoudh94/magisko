@@ -3,10 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>7th Store</title>
 </head>
 <body>
+  <div class="container" id="login">
+    <div class="row d-flex align-items-center justify-content-center vh-100">
+        <div class="col-lg-8 col-sm-8 col-md-8">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="text-center">Log in</h3>
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="mb-3 row">
+                            <div class="mb-3 col-12 d-grid gap-2">
+                                  <input type="email" required class="form-control" id="staticEmail" placeholder="Enter your email">
+                            </div>
+                            <div class="mb-3 col-12 d-grid gap-2">
+                                  <input type="password" class="form-control" id="inputPassword" placeholder="Enter your password">
+                            </div>
+                            <div class="col-12 d-grid gap-2">
+                                <a class="btn btn-primary " href="./home.html">Log in</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
     <nav class="navbar navbar-expand-lg fixed-top navbar-while bg-white">
         <div class="container container-fluid">
           <a class="navbar-brand fs-2" href="#">Nana</a>
