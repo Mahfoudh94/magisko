@@ -3,36 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>7th Store</title>
 </head>
 <body>
-  <div class="container" id="login">
-    <div class="row d-flex align-items-center justify-content-center vh-100">
-        <div class="col-lg-8 col-sm-8 col-md-8">
-            <div class="card">
-                <div class="card-header">
-                    <h3 class="text-center">Log in</h3>
-                </div>
-                <div class="card-body">
-                    <form>
-                        <div class="mb-3 row">
-                            <div class="mb-3 col-12 d-grid gap-2">
-                                  <input type="email" required class="form-control" id="staticEmail" placeholder="Enter your email">
-                            </div>
-                            <div class="mb-3 col-12 d-grid gap-2">
-                                  <input type="password" class="form-control" id="inputPassword" placeholder="Enter your password">
-                            </div>
-                            <div class="col-12 d-grid gap-2">
-                                <a class="btn btn-primary " href="./home.html">Log in</a>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-  </div>
     <nav class="navbar navbar-expand-lg fixed-top navbar-while bg-white">
         <div class="container container-fluid">
           <a class="navbar-brand fs-2" href="#">Nana</a>
@@ -40,20 +15,86 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Products</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Be a seller</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./index.html">sign out</a>
-              </li>
-            </ul>
+            <div class="navbar-nav ms-auto mb-2 mb-lg-0">
+                
+                <div class="row">
+                  <div class="nav-link">Welcome</div>
+                  <a class="nav-link" data-bs-toggle="modal" href="#exampleModalToggle" role="button">sign in / sign out</a>
+                </div>
+            </div>
           </div>
         </div>
       </nav>
+
+      <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header align-items-center justify-content-center">
+              <h1 class="modal-title fs-4" id="exampleModalToggleLabel">Sign up</h1>
+            </div>
+            <div class="modal-body mt-2">
+              <div class="container">
+                <div class="row d-flex align-items-center justify-content-center">
+                    <div class="">
+                                <form>
+                                    <div class="mb-3 row">
+                                        <div class="mb-3 col-12 d-grid gap-2">
+                                              <input type="text" required class="form-control" placeholder="Enter your email or username">
+                                        </div>
+                                        <div class="mb-3 col-12 d-grid gap-2">
+                                              <input type="password" class="form-control" id="inputPassword" placeholder="Enter your password">
+                                        </div>
+                                        <div class="col-12 d-grid gap-2">
+                                            <a class="btn btn-primary " href="#">Sign up</a>
+                                        </div>
+                                        <div class="mt-2">
+                                          Already have an account? <a class="link-item" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Sign in</a>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header align-items-center justify-content-center">
+              <h1 class="modal-title fs-4" id="exampleModalToggleLabel2">login</h1>
+            </div>
+            <div class="modal-body mt-2">
+              <div class="container">
+                <div class="row d-flex align-items-center justify-content-center">
+                    <div class="">
+                                <form>
+                                    <div class="mb-3 row">
+                                        <div class="mb-3 col-12 d-grid gap-2">
+                                              <input type="email" required class="form-control" id="staticEmail" placeholder="Enter your email">
+                                        </div>
+                                        <div class="mb-3 col-12 d-grid gap-2">
+                                              <input type="password" class="form-control" id="inputPassword" placeholder="Enter your password">
+                                        </div>
+                                        <div class="col-12 d-grid gap-2">
+                                            <a class="btn btn-primary " href="#">Log in</a>
+                                        </div>
+                                        <div class="mt-2">
+                                          Don't have an account? <a class="link-item" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Sign Up</a>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <section class="container  my-2">
         <div class="row">
         <div class="col-lg-3 col-sm-6 col-md-4  my-2">
