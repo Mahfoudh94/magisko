@@ -4,7 +4,6 @@ html {
 body{
   width: 100%;
   padding-top: 80px;
-  display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
@@ -32,4 +31,30 @@ form{
 }
 .link-item{
   cursor: pointer;
+}
+.fs-7{
+  font-size: 1rem;
+}
+.fs-8{
+  font-size: 0.8rem;
+}
+.mb-15{
+  margin-bottom: -12%;
+}
+.mt-15{
+  margin-top: -15%;
+}
+.hov{
+  cursor: pointer;
+  
+}
+.hov:hover{
+  transition: background-color .2s;
+  border-radius: 30px;
+  box-sizing: border-box;
+  background-color: rgb(199, 199, 199);
+}
+.container.carousel{
+  margin-top: 1.5rem;
+  max-height: 60%;
 }
