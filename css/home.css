@@ -1,15 +1,14 @@
-body{
-    padding-top: 80px;
+html {
     scroll-behavior: smooth;
+}
+body{
     width: 100%;
-    display: flex;
+    padding-top: 80px;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(45deg,#d2001a,#7462ff,#f48e21,#23d5ab);
+    min-height: 100vh;
+    background: linear-gradient(65deg,#d2001a,#7462ff,#f48e21,#23d5ab);
+    background-attachment: fixed;
     background-size: 300% 300%;
-    animation: gradient 12s ease infinite;
-}
-.navbar-brand {
-    font-size: 1.5em;
-    color: #f48e21;
+    animation: 12s ease infinite gradient;
 }

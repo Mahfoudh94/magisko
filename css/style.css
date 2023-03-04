@@ -1,28 +1,8 @@
-html {
-  scroll-behavior: smooth;
-}
-body{
-  width: 100%;
-  padding-top: 80px;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  background: linear-gradient(45deg,#d2001a,#7462ff,#f48e21,#23d5ab);
-  background-attachment: fixed;
-  background-size: 300% 300%;
-  animation: 12s ease infinite gradient;
-}
-*{
-  margin: 0;
-  padding: 0;
-  outline: none;
-  box-sizing: border-box;
-}
 .navbar-brand {
   font-size: 1.5em;
   color: orange !important;
 }
-form{
+form.v25{
   width: 100%;
   display: flex;
   align-items: center;
@@ -39,22 +19,50 @@ form{
   font-size: 0.8rem;
 }
 .mb-15{
-  margin-bottom: -12%;
+  margin-bottom: -2%;
 }
 .mt-15{
-  margin-top: -15%;
+  margin-top: -5%;
 }
 .hov{
   cursor: pointer;
-  
+  width: auto;
 }
 .hov:hover{
   transition: background-color .2s;
-  border-radius: 30px;
-  box-sizing: border-box;
   background-color: rgb(199, 199, 199);
 }
 .container.carousel{
   margin-top: 1.5rem;
   max-height: 60%;
+}
+
+.circle-carsuel{
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 10%;
+  padding: auto;
+}
+.username-acc{
+  place-content: space-between;
+  display: flex;
+}
+.margin-100{
+  margin-top: 15vh;
+}
+textarea{
+  height: 4.5rem;
+  resize:none;
+}
+.flex-auto{
+  flex: auto;
+}
+.h-10{
+  height: 15vh;
+}
+footer{
+  margin-top: 3rem;
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
