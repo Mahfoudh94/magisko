@@ -1,0 +1,11 @@
+.row .wrapper{
+    position: relative;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 1rem;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
