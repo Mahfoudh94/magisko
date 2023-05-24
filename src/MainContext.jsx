@@ -1,4 +1,4 @@
-import { createContext, useContext } from "react";
+import { createContext, useContext, useState } from "react";
 
 const MainContext = createContext({
     CurrentUser: {},
@@ -8,18 +8,24 @@ const MainContext = createContext({
 })
 
 export const ContextProvider = ({children}) => {
-    const [CurrentUser, setCurrentUser] = useState({});
-    const [UserToken, setUserToken] =
+    const [CurrentUser, _setCurrentUser] = useState({});
+    const [UserToken, _setUserToken] =
         useState(localStorage.getItem("USER_TOKEN") || '');
+        const setUserToken = (val) => {
+            _setUserToken(val);
+            localStorage.setItem('USER_TOKEN', val)
+        }
+        const setCurrentUser = () => {}
     return (
         <MainContext.Provider
          value={{CurrentUser,
             UserToken,
             setCurrentUser,
-            setUserToken}}>
+            setUserToken
+          }}>
             {children}
         </MainContext.Provider>
     )
 }
 
-export default useMainContext() = useContext(MainContext);
+export const useMainContext = () => useContext(MainContext);
